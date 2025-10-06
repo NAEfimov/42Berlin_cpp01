@@ -6,7 +6,7 @@
 /*   By: nefimov <nefimov@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 16:14:10 by nefimov           #+#    #+#             */
-/*   Updated: 2025/10/06 16:49:57 by nefimov          ###   ########.fr       */
+/*   Updated: 2025/10/06 16:55:46 by nefimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,9 @@
 #include "Zombie.hpp"
 #include <iostream>
 #include <string>
+
+Zombie*	newZombie(std::string name);
+void	randomChump(std::string name);
 
 int	main(void) {
 	std::string		chumps[] = CHUMPS;
