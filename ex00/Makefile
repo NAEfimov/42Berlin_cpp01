@@ -22,9 +22,10 @@ NAME		:= braiiiiiiinnnzzzz
 
 INCS		:= .
 
-SRCS		:=	mapb.cpp	\
-				Contact.cpp	\
-				PhoneBook.cpp			
+SRCS		:=	main.cpp		\
+				Zombie.cpp		\
+				newZombie.cpp	\
+				randomChump.cpp
 
 OBJ_DIR		:=	obj
 
