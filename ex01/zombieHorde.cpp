@@ -6,7 +6,7 @@
 /*   By: nefimov <nefimov@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 17:19:56 by nefimov           #+#    #+#             */
-/*   Updated: 2025/10/07 10:19:33 by nefimov          ###   ########.fr       */
+/*   Updated: 2025/10/07 10:39:56 by nefimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,12 @@ Zombie* zombieHorde(int N, std::string name) {
 	void*	mem;
 	Zombie*	zombie_arr;
 	
-	if (N <= 0) return NULL;
+	if (N <= 0)
+		return NULL;
 	
-	mem = ::operator new(sizeof(Zombie) * N);
+	mem = operator new(sizeof(Zombie) * N, std::nothrow);
+	if (mem == NULL)
+		return NULL;
 	zombie_arr = static_cast<Zombie*>(mem);
 	for (int i = 0; i < N; ++i) {
 		new (&zombie_arr[i]) Zombie(name);
