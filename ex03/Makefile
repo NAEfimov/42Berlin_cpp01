@@ -22,9 +22,13 @@ NAME		:= unnecessary_violence
 
 INCS		:= .
 
-SRCS		:=	main.cpp		\
-				Zombie.cpp		\
-				zombieHorde.cpp
+SRCS		:=	main.cpp	\
+				Weapon.cpp	\
+				Weapon.hpp	\
+				HumanA.cpp	\
+				HumanA.hpp	\
+				HumanB.cpp	\
+				HumanB.hpp
 
 OBJ_DIR		:=	obj
 

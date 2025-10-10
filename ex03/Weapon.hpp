@@ -6,7 +6,7 @@
 /*   By: nefimov <nefimov@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 14:33:22 by nefimov           #+#    #+#             */
-/*   Updated: 2025/10/10 15:21:29 by nefimov          ###   ########.fr       */
+/*   Updated: 2025/10/10 18:51:46 by nefimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ class Weapon {
 	Weapon(std::string);
 	~Weapon(void);
 
-	std::string&	getType();
-	void			setType(std::string);
+	const std::string&	getType() const;
+	void				setType(std::string);
 
   private:
 	std::string		type;
