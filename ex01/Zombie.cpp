@@ -6,7 +6,7 @@
 /*   By: nefimov <nefimov@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 15:56:53 by nefimov           #+#    #+#             */
-/*   Updated: 2025/10/07 10:10:37 by nefimov          ###   ########.fr       */
+/*   Updated: 2025/10/10 13:21:41 by nefimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,13 @@
 
 Zombie::Zombie(std::string name) {
 	this->name = name;
-	announce();
+	std::cout << name << ": created" << std::endl;
+	// announce();
 }
 
 Zombie::~Zombie(void) {
-	// std::cout << name << ": destroyed" << std::endl;
-	std::cout << name << std::endl;
+	std::cout << name << ": destroyed" << std::endl;
+	// std::cout << name << std::endl;
 }
 
 void Zombie::announce(void) {
