@@ -6,7 +6,7 @@
 /*   By: nefimov <nefimov@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 17:19:56 by nefimov           #+#    #+#             */
-/*   Updated: 2025/10/10 13:52:07 by nefimov          ###   ########.fr       */
+/*   Updated: 2025/10/10 14:06:59 by nefimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,5 @@ void	destroyZombieHorde(Zombie* zombie_arr, int N) {
 	for (int i = 0; i < N; ++i) {
 		zombie_arr[i].~Zombie();
 	}
-	::operator delete(zombie_arr);
+	operator delete(zombie_arr);
 }
