@@ -24,11 +24,8 @@ INCS		:= .
 
 SRCS		:=	main.cpp	\
 				Weapon.cpp	\
-				Weapon.hpp	\
 				HumanA.cpp	\
-				HumanA.hpp	\
-				HumanB.cpp	\
-				HumanB.hpp
+				HumanB.cpp
 
 OBJ_DIR		:=	obj
 
