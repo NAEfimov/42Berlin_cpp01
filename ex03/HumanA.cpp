@@ -6,7 +6,7 @@
 /*   By: nefimov <nefimov@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 19:13:53 by nefimov           #+#    #+#             */
-/*   Updated: 2025/10/13 18:05:53 by nefimov          ###   ########.fr       */
+/*   Updated: 2025/10/13 18:10:31 by nefimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ void HumanA::setWeapon(Weapon& new_weapon) {
 }
 
 void HumanA::attack(void) {
-	// <name> attacks with their <weapon type>
-	std::cout<< name << " attacks with their " << weapon.getType() << std::endl;
+	std::cout << name << " attacks with their " << weapon.getType() << std::endl;
 }
 

@@ -6,7 +6,7 @@
 /*   By: nefimov <nefimov@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 18:40:09 by nefimov           #+#    #+#             */
-/*   Updated: 2025/10/13 17:45:03 by nefimov          ###   ########.fr       */
+/*   Updated: 2025/10/13 18:10:44 by nefimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,5 @@ const	std::string&	Weapon::getType() const {
 }
 
 void	Weapon::setType(std::string new_type) {
-	// std::cout << "OLD TYPE: " << type << std::endl;
 	type = new_type;
-	// std::cout << "NEW TYPE: " << type << std::endl;
 }

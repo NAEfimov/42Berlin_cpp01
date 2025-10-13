@@ -6,14 +6,14 @@
 /*   By: nefimov <nefimov@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 14:33:22 by nefimov           #+#    #+#             */
-/*   Updated: 2025/10/10 18:51:46 by nefimov          ###   ########.fr       */
+/*   Updated: 2025/10/13 18:10:38 by nefimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef WEAPON_HPP
 # define WEAPON_HPP
 
-#include <string>
+# include <string>
 
 class Weapon {
   public:
