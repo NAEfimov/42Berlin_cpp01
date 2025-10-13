@@ -6,12 +6,11 @@
 /*   By: nefimov <nefimov@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 19:13:53 by nefimov           #+#    #+#             */
-/*   Updated: 2025/10/13 15:36:39 by nefimov          ###   ########.fr       */
+/*   Updated: 2025/10/13 18:05:53 by nefimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanA.hpp"
-#include "Weapon.hpp"
 #include <iostream>
 
 HumanA::HumanA(std::string nm, Weapon &wp) : name(nm), weapon(wp) {

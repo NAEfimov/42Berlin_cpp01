@@ -6,12 +6,11 @@
 /*   By: nefimov <nefimov@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 15:37:15 by nefimov           #+#    #+#             */
-/*   Updated: 2025/10/13 16:26:46 by nefimov          ###   ########.fr       */
+/*   Updated: 2025/10/13 18:05:57 by nefimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanB.hpp"
-#include "Weapon.hpp"
 #include <iostream>
 
 HumanB::HumanB(std::string nm) : name(nm) {
