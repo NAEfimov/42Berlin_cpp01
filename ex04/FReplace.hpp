@@ -6,7 +6,7 @@
 /*   By: nefimov <nefimov@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 15:12:55 by nefimov           #+#    #+#             */
-/*   Updated: 2025/10/20 16:15:58 by nefimov          ###   ########.fr       */
+/*   Updated: 2025/10/20 17:37:14 by nefimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class FReplace {
 
   private:
 	FReplace(void);
-	std::string replaceInLine(const std::string line);
+	std::string replaceInLine(const std::string& line);
 	
 	const std::string	in_file_;
 	const std::string	out_file_;

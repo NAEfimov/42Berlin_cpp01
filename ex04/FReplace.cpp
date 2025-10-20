@@ -6,7 +6,7 @@
 /*   By: nefimov <nefimov@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 15:29:33 by nefimov           #+#    #+#             */
-/*   Updated: 2025/10/20 16:21:13 by nefimov          ###   ########.fr       */
+/*   Updated: 2025/10/20 17:40:51 by nefimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,18 +47,20 @@ bool FReplace::makeReplacement(void) {
 	return (0);
 }
 
-std::string FReplace::replaceInLine(const std::string line) {
+std::string FReplace::replaceInLine(const std::string& line) {
 	std::string	result;
 	size_t		pos = 0;
 	size_t 		found;
 
 	if (replace_every_ == "")
 		return line;
+
 	while ((found = line.find(replace_every_, pos)) != std::string::npos) {
 		result += line.substr(pos, found - pos);
 		result += replace_with_;
 		pos = found + replace_every_.length();
 	}
 	result += line.substr(pos);
+	
 	return result;
 }
