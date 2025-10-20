@@ -22,7 +22,8 @@ NAME		:= sed_is_for_losers
 
 INCS		:= .
 
-SRCS		:=	main.cpp
+SRCS		:=	main.cpp \
+				FReplace.cpp
 
 OBJ_DIR		:=	obj
 
