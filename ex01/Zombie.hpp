@@ -6,7 +6,7 @@
 /*   By: nefimov <nefimov@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 15:44:26 by nefimov           #+#    #+#             */
-/*   Updated: 2025/10/10 13:28:41 by nefimov          ###   ########.fr       */
+/*   Updated: 2025/12/12 13:22:44 by nefimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,13 @@
 
 class Zombie {
   public:
+  	Zombie(void);
 	Zombie(std::string name);
 	~Zombie(void);
 	
-	void	announce(void);
+	void announce(void);
 
   private:
-	Zombie(void);
-	
 	std::string	name;
 };
 

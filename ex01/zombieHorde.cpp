@@ -6,7 +6,7 @@
 /*   By: nefimov <nefimov@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 17:19:56 by nefimov           #+#    #+#             */
-/*   Updated: 2025/10/10 14:06:59 by nefimov          ###   ########.fr       */
+/*   Updated: 2025/12/12 14:05:30 by nefimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,9 @@ Zombie* zombieHorde(int N, std::string name) {
 }
 
 void	destroyZombieHorde(Zombie* zombie_arr, int N) {
-	if (N <= 0 || zombie_arr == NULL) return ;
+	if (N <= 0 || zombie_arr == NULL) {
+		return ;
+	}
 	
 	for (int i = 0; i < N; ++i) {
 		zombie_arr[i].~Zombie();

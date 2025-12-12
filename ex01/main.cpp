@@ -6,13 +6,13 @@
 /*   By: nefimov <nefimov@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 16:14:10 by nefimov           #+#    #+#             */
-/*   Updated: 2025/10/10 13:49:56 by nefimov          ###   ########.fr       */
+/*   Updated: 2025/12/12 13:30:56 by nefimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #define ZB_TESTS_NUM 4
 #define ZB_NAMES {"Joe", "Ross", "Chandler", "Rachel"}
-#define ZB_COUNT {3, 0, 10, 1}
+#define ZB_COUNT {3, -1, 10, 1}
 #define COLOR_RED	31
 #define COLOR_START 35
 
