@@ -6,7 +6,7 @@
 /*   By: nefimov <nefimov@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 13:48:16 by nefimov           #+#    #+#             */
-/*   Updated: 2025/12/12 13:10:16 by nefimov          ###   ########.fr       */
+/*   Updated: 2025/12/12 14:53:34 by nefimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
 
 #define CMD_NUM 4
 
-Harl::Harl(void) {}
+Harl::Harl( void ) {}
 
-void Harl::complain(std::string level) {
+void Harl::complain( std::string level ) {
 	const std::string levels[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 	
 	int i = 0;
@@ -45,7 +45,7 @@ void Harl::complain(std::string level) {
 	}
 }
 
-void Harl::debug(void) {
+void Harl::debug( void ) {
 	std::cout << "[ DEBUG ]" << std::endl;
 	std::cout << "I love having extra bacon for my 7XL-double-cheese-triple"
 			  << "-pickle-specialketchup burger.\n"
@@ -53,7 +53,7 @@ void Harl::debug(void) {
 	std::cout << std::endl;
 }
 
-void Harl::info(void) {
+void Harl::info( void ) {
 	std::cout << "[ INFO ]" << std::endl;
 	std::cout << "I cannot believe adding extra bacon costs more money.\n"
 			  << "You didn’t put enough bacon in my burger!\n"
@@ -61,7 +61,7 @@ void Harl::info(void) {
 	std::cout << std::endl;
 }
 
-void Harl::warning(void) {
+void Harl::warning( void ) {
 	std::cout << "[ WARNING ]" << std::endl;
 	std::cout << "I think I deserve to have some extra bacon for free.\n"
 			  << "I’ve been coming for years, whereas you started "
@@ -69,7 +69,7 @@ void Harl::warning(void) {
 	std::cout << std::endl;
 }
 
-void Harl::error(void) {
+void Harl::error( void ) {
 	std::cout << "[ ERROR ]" << std::endl;
 	std::cout << "This is unacceptable!\n"
 			  << "I want to speak to the manager now." << std::endl;
