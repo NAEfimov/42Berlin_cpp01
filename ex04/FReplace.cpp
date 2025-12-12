@@ -6,7 +6,7 @@
 /*   By: nefimov <nefimov@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 15:29:33 by nefimov           #+#    #+#             */
-/*   Updated: 2025/10/20 17:40:51 by nefimov          ###   ########.fr       */
+/*   Updated: 2025/12/12 14:38:51 by nefimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,17 @@
 #include <fstream>
 #include <iostream>
 
-FReplace::FReplace(const std::string in_file, const std::string replace_every,
-				   const std::string replace_with) :
-	in_file_(in_file), out_file_(in_file + ".replace"),
-	replace_every_(replace_every), replace_with_(replace_with) {}
+FReplace::FReplace(std::string const in_file, std::string const replace_every,
+				   std::string const replace_with) {
+	in_file_ = in_file;
+	out_file_ = in_file + ".replace";
+	replace_every_ = replace_every;
+	replace_with_ = replace_with;
+}
 
-FReplace::~FReplace(void) {};
+FReplace::~FReplace() {};
 
-bool FReplace::makeReplacement(void) {
+bool FReplace::makeReplacement() {
 	std::ifstream in(in_file_.c_str());
 	if (!in) {
 		std::cout << "File not found" << std::endl;
@@ -35,7 +38,7 @@ bool FReplace::makeReplacement(void) {
 	}
 
 	std::string line;
-	bool		is_first = true;
+	bool is_first = true;
 	while (getline(in, line)) {
 		if (is_first)
 			is_first = false;
