@@ -6,7 +6,7 @@
 /*   By: nefimov <nefimov@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 19:02:05 by nefimov           #+#    #+#             */
-/*   Updated: 2025/10/13 18:07:24 by nefimov          ###   ########.fr       */
+/*   Updated: 2025/12/12 14:25:37 by nefimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,18 +17,17 @@
 
 class	HumanA {
   public:
-	void setWeapon(Weapon& new_weapon);
-  
 	HumanA(std::string name, Weapon &weapon);
-	~HumanA(void);
-
-	void attack(void);
+	~HumanA();
+	
+	void setWeapon(Weapon& new_weapon);
+	void attack();
   
   private:
+  	HumanA();
+	
 	std::string	name;
-	Weapon&		weapon;
-
-	HumanA(void);
+	Weapon& weapon;
 };
 
 #endif // HUMANA_HPP
